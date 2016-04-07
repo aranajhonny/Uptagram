@@ -14,7 +14,6 @@
 //= require turbolinks
 //= require_tree .
 
-
 $(document).ready(function() {
   $('.likes-link').on('click', function(event) {
     event.preventDefault();
@@ -27,6 +26,7 @@ $(document).ready(function() {
 });
 
 $( document ).ready(function() {
+
     $("#imagefile").change(function (){
          $("#img").show();
          $("#img").attr("src",'test.gif');
