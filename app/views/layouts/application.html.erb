@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="es">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"
+  <title>Uptagram</title>
+ <!-- Material Design fonts -->
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="hide-sidedrawer" >
+<%= render 'layouts/navigation' %>
+
+
+
+<div id="content-wrapper">
+  <div id="appbar-placeholder" class="mui--appbar-height"></div>
+  
+    <div class="container">
+  <%= yield %>
+
+    </div>
+
+  
+</div>
+
+
+
+<%= render 'layouts/footer' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- Compiled and minified JavaScript -->
+
+  <script>
+  loadjs.ready(["jquery", "mui"], function() {
+    "use strict";
+    jQuery(function(e) {
+        function t() {
+            var t = {
+                    onclose: function() {
+                        i.removeClass("active").appendTo(document.body)
+                    }
+                },
+                n = e(mui.overlay("on", t));
+            i.appendTo(n), setTimeout(function() {
+                i.addClass("active")
+            }, 20)
+        }
+
+        function n() {
+            s.toggleClass("hide-sidedrawer")
+        }
+
+        function a() {
+            c.scrollTop() > d ? u || (l.addClass("active"), u = !0) : u && (l.removeClass("active"), u = !1)
+        }
+        var s = e("body"),
+            i = e("#sidedrawer"),
+            r = e("#sidenav");
+        ! function() {
+            var t = e("strong", r);
+            t.filter(":not(.active)").next().hide(), t.on("click", function() {
+                e(this).next().slideToggle(200)
+            })
+        }(), e("#appbar-sidenav-show").on("click", t), e("#appbar-sidenav-hide").on("click", n);
+        var l = e("#header"),
+            o = e("#f-hero"),
+            c = e(window);
+        if (o.length) {
+            var d = o.height(),
+                u = !1;
+            c.on("scroll", a), a()
+        } else c.scrollTop() > 0 ? l.addClass("header-shadow") : c.one("scroll", function() {
+            l.addClass("header-shadow")
+        });
+
+    })
+});
+  </script>
+  
+ <script>
+  
+  
+  
+  window.addEventListener('load', function() {
+    console.log("listo..!")
+  });
+</script>
+
+
+
+
+    <script>
+      if (window.jQuery) loadjs.done('jquery');
+      if (window.mui) loadjs.done('mui');
+    </script>  
+</body>
+</html>

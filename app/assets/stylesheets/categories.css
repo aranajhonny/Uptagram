@@ -1,0 +1,168 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.app-header{
+	background: url("../img/img2.jpg") no-repeat center top fixed;
+	font-family: "Avenir", Futura, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-bottom: 80px;
+	width: 100%;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.app-link{
+	color: white;
+	text-shadow:none;
+}
+.app-link:hover{
+	color: white;
+}
+
+.app-icon{
+	background: white;
+}
+.app-section1{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 170px;
+}
+.app-titulo{
+	text-align: center;
+	color: green;
+	font-size: 2.8em;
+	margin-bottom: 35px;
+}
+.app-resaltar{
+	color: #0080d6;
+
+}
+.app-descripcion{
+	text-align: center;
+	color: black;
+	font-size: 1em;
+	margin-bottom: 100px;
+}
+.img-responsive{
+	border-radius: 20px;
+}
+
+.app-section2{
+	margin: 80px 0;
+}
+.app-titulo2{
+	margin-top: 0;
+	color: #8BC34A;
+}
+.app-separador{
+	width: 100px;
+	border-bottom: 1px solid #0080d6;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.app-justificar{
+	text-align: justify;
+	color: #727272;
+}
+.app-media{
+	margin-top: 40px;
+}
+.media-heding{
+	color: #8BC34A;
+}
+.app-glyphicon1{
+	background: #8BC34A;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+.app-section3{
+	background: #DCEDC8;
+	padding: 80px 0;
+}
+.app-contenedor{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.app-separador2{
+	width: 100px;
+	border-bottom: 1px solid #0080d6;
+	margin: 20px auto;
+}
+.glyphicon2{
+	color: #8BC34A;
+	font-size: 60px;
+}
+.app-glyphicon3{
+	color: #0080d6;
+	font-size: 60px;
+}
+.app-glyphicon4{
+	color: #F44336;
+	font-size: 60px;
+}
+.app-glyphicon5{
+	color: #FFEB3B;
+	font-size: 60px;
+}
+.app-glyphicon6{
+	color: #9E9E9E;
+	font-size: 60px;
+}
+.app-glyphicon7{
+	color: #FF5722;
+	font-size: 60px;
+}
+
+.app-descripcion2{
+	color: #727272;
+}
+.app-lista1{
+	background: #FF5252;
+	color: white;
+	text-align: center;
+}
+.app-lista2{
+	background:  #8BC34A;
+	color: white;
+	text-align: center;
+}
+.app-video{
+	margin: 0 auto;
+
+
+}
+.app-footer{
+	text-align: center;
+	background: #f7f8fa;
+	letter-spacing: 2px;
+	text-transform: bold;
+	padding: 100px 0;
+}
+.app-empresa{
+	margin-bottom: 50px;
+}
+
+@media (max-width: 768px){
+	.app-section1{
+	width: 90%;
+}
+.app-titulo{
+	font-size: 1.8em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.app-descripcion{
+	font-size: 0.8em;
+	margin-bottom: 50px;
+}
+}
+.about{
+	background: white;
+}

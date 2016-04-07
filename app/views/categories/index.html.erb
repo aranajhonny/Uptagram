@@ -1,0 +1,17 @@
+<div class="row">
+  <h1>Listing Categories</h1><br>
+  <div class="container">
+ <% @categories.each do |category| %>
+      <div class="col-xs-6">
+      <%=link_to category do %>
+        <%=  image_tag(category.image.url)%>
+          <p><%= category.name %></p>
+        <% end%>
+      </div>
+      
+ <% end %>
+  </div>
+
+</div>
+
+

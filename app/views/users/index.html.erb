@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="card-content">
+<div class="text-user">
+  <h2>Usuarios</h2>
+</div>
+                  
+  </div>  
+<% @users.each do |user| %>
+  <div class="col s12 m6 l4" > 
+               <div class="mui-panel">
+               <div class="card-image">
+                 <div class="imagecircle ">
+                    <img src="<%= user.image %>" alt="">
+                  </div>
+               </div>
+                  
+        					<div class="card-content">
+                  <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 text-user">
+                     <h5><%= user.name %> </h5>
+                  </div>
+                    
+                  </div>
+       				    </div>	
+               </div>
+    </div>      
+<% end %>
+</div>
+

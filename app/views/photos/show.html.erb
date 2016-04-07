@@ -1,0 +1,28 @@
+      <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+      	  <div class="mui-panel">
+      		  <img><%= image_tag @photo.image.url(:original), class:"img-responsive"%>
+      		  <div class="card-content">
+        		  	<div class="row">
+                    <div class="row col-md-6">
+
+                            <%= link_to "❤ #{@photo.likes.count}", like_photo_path(@photo), method: :post, class: "btn-lg mui-btn mui-btn--primary likes-link  col-xs-4 col-xs-offset-1 " %>
+
+
+                               <% @photo.categories.each do |category| %>
+                                <%= link_to category.name, category, class: "label label-danger col-xs-4 col-xs-offset-1 badge-categoria" %>
+                               <% end %>
+                  </div>
+                            <div class=" col-md-6 ">
+                              <span><%= time_ago_in_words(@photo.created_at) %></h5></span>
+                              <p><%= "Por: #{@photo.user.name}" %></p>
+                            </div>
+                                  
+                </div><br>
+      		 </div>             
+      </div>
+      </div>
+      </div>
+
+
+

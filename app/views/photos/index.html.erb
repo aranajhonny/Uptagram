@@ -1,0 +1,35 @@
+<div class="">
+<div class="row">
+    <% if @photos.any? %>   
+      <% @photos.each do |photo| %>       
+            <div class="col-md-4"  > 
+                    <div class="mui-panel">
+                    <div class="img-responsive">
+                       <%=link_to photo_path(photo) do %>
+                              <%= image_tag photo.image.url(:original),{:width => "300", :height => "300"} %>
+                               <% end %>
+                    </div>
+                             
+                        <div class="row">
+
+                            <div class="col-xs-6 ">
+                            <%= link_to "❤ #{photo.likes.count}", like_photo_path(photo), method: :post, class: "btn-lg mui-btn mui-btn--primary likes-link  " %>
+
+                            </div>
+                               <% photo.categories.each do |category| %>
+                                <%= link_to category.name, category, class: "label label-danger col-xs-offset-2 col-xs-4 badge-categoria" %>
+                               <% end %>
+                        
+                        </div>
+                          
+                        <br>
+                    </div>
+
+            </div>          
+      <% end %>
+
+    <% else %>
+      <h1>No hay fotos</h1>
+    <% end %>
+</div>
+</div>

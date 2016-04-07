@@ -1,0 +1,60 @@
+<header id="header" class="header-shadow">
+  <nav id="appbar" class="mui-container-fluid">
+  <table width="100%">
+    <tbody><tr class="mui--appbar-height">
+      <td>
+        <a id="appbar-sidenav-show" class="mui--visible-xs-inline-block mui--visible-sm-inline-block"><i class="material-icons"></i></i></a>
+        <a id="appbar-sidenav-hide" class="mui--hidden-xs mui--hidden-sm"><i class="material-icons"></i></a>
+         <%= link_to '<i class="fa fa-instagram"> Reciclagram</i>'.html_safe, photos_path, class:"mui-btn mui-btn--raised mui-btn--primary", id: "logo" %>
+      </td>
+      <td class="mui--text-right">
+        <div id="appbar-social-links" class="mui--hidden-xs">
+        </div>
+        <div class="mui-dropdown">
+          <a id="appbar-more-vert" data-mui-toggle="dropdown"><i class="material-icons">more_vert</i></a>
+          <ul class="mui-dropdown__menu mui-dropdown__menu--right " style="top: 31px;">
+        <% if user_signed_in? %>
+            <li><%= link_to "Usuarios", users_path, class:"", id: "users" %></li>
+            <li class=""><%= link_to 'Salir', destroy_user_session_path, method: :delete, id: "signout" %></li>
+        <% else %>
+            <li class="">  <%= link_to 'Iniciar sesion', new_user_session_path, class: "" %></li>
+        <% end %>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody></table>
+</nav>
+</header>
+<div id="sidedrawer">
+      <nav id="sidenav" class="mui--no-user-select">
+        <div>
+          <h2 class="mui--appbar-line-height"><a href="/">Logo</a><i class="fa fa-instagram"></i></h2>
+        </div>
+        <div class="mui-divider"></div>
+        <ul>
+          
+          
+          
+          <li>
+            <strong class=""><a href="https://upta.herokuapp.com/static/acercade" class="fa fa-trash"> Acerca del Reciclaje</a></strong>
+            
+          </li>
+          <li>
+            <strong class="">Getting Started</strong>
+            
+          </li>
+          <li>
+            <strong class="">Getting Started</strong>
+            
+          </li>
+          <li>
+            <strong class="">Getting Started</strong>
+            
+          </li>
+        
+          
+        </ul>
+      </nav>
+</div>
+
