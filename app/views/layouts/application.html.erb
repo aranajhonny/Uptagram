@@ -7,23 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"
   <title>Uptagram</title>
- <!-- Material Design fonts -->
-
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
-
- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
+ <!-- estilos-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body class="hide-sidedrawer" >
 <%= render 'layouts/navigation' %>
-
-
-
 <div id="content-wrapper">
-  <div id="appbar-placeholder" class="mui--appbar-height"></div>
-  
+  <div id="appbar-placeholder" class="mui--appbar-height"></div> 
     <div class="container">
   <%= yield %>
 
@@ -34,11 +27,9 @@
 
 
 
-<%= render 'layouts/footer' %>
-
+  <%= render 'layouts/footer' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <!-- Compiled and minified JavaScript -->
-
   <script>
   loadjs.ready(["jquery", "mui"], function() {
     "use strict";
@@ -85,19 +76,11 @@
     })
 });
   </script>
-  
  <script>
-  
-  
-  
   window.addEventListener('load', function() {
     console.log("listo..!")
   });
 </script>
-
-
-
-
     <script>
       if (window.jQuery) loadjs.done('jquery');
       if (window.mui) loadjs.done('mui');
