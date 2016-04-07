@@ -90,9 +90,12 @@ html, body {
 
 .img-responsive{
   width: 100%;
+  border-radius: 0px;
+  
 }
 .img-responsive img{
   width: 100%;  
+  border-radius: 0px;
 }
  .card-content {
   padding: 0px;
