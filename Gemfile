@@ -34,7 +34,6 @@ gem 'time_ago_in_words', '~> 0.1.1'
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'rails_12factor', group: :production
-# Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'heroku_rails_deflate', :group => :production
 gem 'acts_as_votable'
