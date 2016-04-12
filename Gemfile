@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 ruby '2.2.4'
 gem 'paperclip-dropbox', '>= 1.1.7'
 gem 'paperclip'
@@ -34,7 +33,7 @@ gem 'time_ago_in_words', '~> 0.1.1'
 gem 'will_paginate', '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'rails_12factor', group: :production
-# gem 'bcrypt', '~> 3.1.7'
+
 gem 'heroku_rails_deflate', :group => :production
 gem 'acts_as_votable'
 gem 'acts-as-taggable-on'
@@ -46,4 +45,5 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'sqlite3'
 end
+
 
