@@ -39,7 +39,7 @@ gem 'rails_12factor', group: :production
 gem 'heroku_rails_deflate', :group => :production
 gem 'acts_as_votable'
 gem 'acts-as-taggable-on'
-
+gem 'mini_portile2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
